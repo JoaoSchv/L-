@@ -1,0 +1,148 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #FFE4E1;
+    color: #5D4037;
+    overflow-x: hidden;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Estilos do Cabeçalho */
+header {
+    background-color: #DC143C; 
+    color: #FFFFFF;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #B22222;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para as seções */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+#carta .mensagem p {
+    color: #4A4A4A;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+#motivos ol li {
+    color: #6A5ACD;
+    margin-bottom: 8px;
+}
+
+/* Estilizando o textarea */
+#caderno {
+    width: 95%;
+    padding: 15px;
+    border: 1px solid #F08080; 
+    border-radius: 5px;
+    font-size: 1em;
+    min-height: 150px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#caderno:focus {
+    outline: none;
+    border-color: #DC143C;
+    box-shadow: 0 0 5px rgba(220, 20, 60, 0.5); 
+}
+
+#imagem-central .swiper-button-next,
+#imagem-central .swiper-button-prev {
+    color: #DC143C !important;
+    top: 50%;
+    transform: translateY(-50%);
+    /*
+  &.swiper-button-prev {
+    left: 15px;
+  }
+  &.swiper-button-next {
+    right: 15px;
+  }
+  */
+}
+
+/* Setas */
+#imagem-central .swiper-button-next::after,
+#imagem-central .swiper-button-prev::after {
+    font-size: 28px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #DC143C !important; 
+}
+
+/* Estilos para controlar o tamanho das imagens no Carrossel */
+#imagem-central .swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+#imagem-central .swiper-slide {
+    overflow: hidden;
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+
+#imagem-central .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid #DC143C;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+}
+
+/* Estilos para o iframe do Spotify */
+#playlist iframe {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
+
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    section {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 15px;
+    }
+}
